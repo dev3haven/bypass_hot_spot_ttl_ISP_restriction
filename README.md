@@ -5,6 +5,6 @@ Local addresses are ignored by default.
 
 Run as an **administrator**
 ```sh
-pip install pydivert
-python bypass_hot_spot_ttl_ISP_restriction.py
+pip install pydivert pyyaml
+python ttl_gui.py
 ```
