@@ -1,0 +1,110 @@
+settings:
+  script_path: ttl_fix.py
+  config_path: config.yaml
+  ipv4_enabled: true
+  ipv4_ttl: 65
+  ipv6_enabled: true
+  ipv6_ttl: 129
+  skip_local: true
+  auto_start: false
+  lang: ru
+  fallback_lang: en
+  traffic_counter_enabled: true
+  traffic_indicator_enabled: true
+locales:
+  en:
+    title: TTL Fix
+    script_path: Script path
+    config_path: Config path
+    browse: Browse script
+    browse_config: Browse config
+    ipv4_enable: Enable TTL change for IPv4
+    ipv4_ttl_label: 'IPv4 target TTL:'
+    ipv6_enable: Enable TTL change for IPv6
+    ipv6_ttl_label: 'IPv6 target Hop Limit:'
+    skip_local: Do not change TTL for local IP addresses
+    status_stopped: 'Status: Stopped'
+    status_running: 'Status: Running'
+    start: Start
+    stop: Stop
+    error_ttl_integer: TTL must be an integer
+    error_no_script: Specify the script path
+    error_no_config: Specify the config path
+    error_file_not_found: 'File not found:
+
+      {path}'
+    error_config_not_found: 'Config file not found:
+
+      {path}'
+    error_launch: 'Launch error:
+
+      {error}'
+    error_install: 'Installation error: {error}'
+    msg_pyyaml_not_found: PyYAML not found. Installing...
+    msg_pyyaml_installed: PyYAML installed successfully.
+    msg_pyyaml_manual: 'Try manually: pip install pyyaml'
+    msg_pydivert_not_found: PyDivert not found. Installing...
+    msg_pydivert_installed: PyDivert installed successfully.
+    msg_pydivert_manual: 'Try manually: pip install pydivert'
+    msg_running: TTL Fix running.
+    msg_ipv4_ttl: 'IPv4 TTL: {ttl}'
+    msg_ipv6_ttl: 'IPv6 Hop Limit: {ttl}'
+    msg_skip_local: Local traffic skipped.
+    msg_press_ctrlc: Press Ctrl+C to stop.
+    msg_stopped: Stopped.
+    error_no_protocol: Neither IPv4 nor IPv6 selected. Nothing to do.
+    lang_label: 'Language:'
+    reset_defaults: Reset to defaults
+    reset_confirm: Reset all settings to defaults?
+    reset_confirm_title: Reset
+    traffic_counter: Traffic counter
+    traffic_indicator: Traffic indicator
+    packets_processed: 'Packets: {count}'
+  ru:
+    title: TTL Fix
+    script_path: Путь к скрипту
+    config_path: Путь к конфигу
+    browse: Обзор скрипта
+    browse_config: Обзор конфига
+    ipv4_enable: Включить смену TTL для IPv4
+    ipv4_ttl_label: 'IPv4 целевой TTL:'
+    ipv6_enable: Включить смену TTL для IPv6
+    ipv6_ttl_label: 'IPv6 целевой Hop Limit:'
+    skip_local: Не менять TTL для локальных IP адресов
+    status_stopped: 'Статус: Остановлено'
+    status_running: 'Статус: Запущено'
+    start: Старт
+    stop: Стоп
+    error_ttl_integer: TTL должен быть целым числом
+    error_no_script: Укажите путь к скрипту
+    error_no_config: Укажите путь к конфигу
+    error_file_not_found: 'Файл не найден:
+
+      {path}'
+    error_config_not_found: 'Файл конфига не найден:
+
+      {path}'
+    error_launch: 'Ошибка запуска:
+
+      {error}'
+    error_install: 'Ошибка установки: {error}'
+    msg_pyyaml_not_found: PyYAML не найден. Устанавливаем...
+    msg_pyyaml_installed: PyYAML успешно установлен.
+    msg_pyyaml_manual: 'Попробуйте вручную: pip install pyyaml'
+    msg_pydivert_not_found: PyDivert не найден. Устанавливаем...
+    msg_pydivert_installed: PyDivert успешно установлен.
+    msg_pydivert_manual: 'Попробуйте вручную: pip install pydivert'
+    msg_running: TTL Fix запущен.
+    msg_ipv4_ttl: 'IPv4 TTL: {ttl}'
+    msg_ipv6_ttl: 'IPv6 Hop Limit: {ttl}'
+    msg_skip_local: Локальный трафик пропускается.
+    msg_press_ctrlc: Нажмите Ctrl+C для остановки.
+    msg_stopped: Остановлено.
+    error_no_protocol: Не выбран ни IPv4, ни IPv6. Нечего делать.
+    lang_label: 'Язык:'
+    reset_defaults: Сбросить настройки
+    reset_confirm: Сбросить все настройки на значения по умолчанию?
+    reset_confirm_title: Сброс
+    traffic_counter: Счетчик трафика
+    traffic_indicator: Индикатор трафика
+    packets_processed: 'Пакетов: {count}'
